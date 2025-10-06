@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Pune Clubs Showcase</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a modern typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* A simple animation for elements to fade in as they are scrolled into view */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- VIT Logo -->
+            <a href="https://www.vit.edu/">
+                <img src="https://www.vit.edu/wp-content/uploads/2024/06/Frame-150505.png" alt="VIT Pune Logo" class="h-12 w-auto">
+            </a>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="https://www.vit.edu/about/" class="text-gray-600 hover:text-red-700 font-medium transition-colors duration-300">About VIT</a>
+                <a href="https://www.vit.edu/lifevit/" class="text-gray-600 hover:text-red-700 font-medium transition-colors duration-300">Life at VIT</a>
+                <a href="https://www.vit.edu/IT/event-highlights/" class="text-gray-600 hover:text-red-700 font-medium transition-colors duration-300">Events</a>
+            </nav>
+            <!-- Mobile Menu Button (optional) -->
+            <button class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-red-800 mb-4 fade-in-up">The Clubs of VIT Pune</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto fade-in-up" style="transition-delay: 100ms;">Discover a vibrant community of innovators, creators, and leaders. Find your passion beyond the classroom.</p>
+        </section>
+
+        <!-- Video Section -->
+        <section class="my-12 fade-in-up" style="transition-delay: 200ms;">
+            <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-6xl">
+                 <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+                    <source src="https://d1r3r36pquuygt.cloudfront.net/vit/videos/1470-x-730-pixels.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Introduction Text -->
+        <section class="max-w-4xl mx-auto text-center my-16 fade-in-up" style="transition-delay: 300ms;">
+             <p class="text-gray-700 leading-relaxed">
+                Vishwakarma Institute of Technology (VIT) is renowned for its dynamic and diverse club culture. With over 40 technical, cultural, and social clubs, students have a platform to explore their passions. Technical clubs like <strong class="text-gray-900">the Robotics Forum, V-BUG (Linux User Group), and Team Veloce Racing</strong> participate in national competitions, fostering innovation. Cultural hubs like <strong class="text-gray-900">Antarang</strong> orchestrate major campus events. These student-run organizations are crucial for developing leadership, teamwork, and applying knowledge to real-world projects.
+             </p>
+        </section>
+
+        <!-- Clubs Showcase Grid -->
+        <section class="my-20">
+            <h2 class="text-3xl font-bold text-center mb-12 fade-in-up">Explore Our Clubs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Club Card 1: Technical -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 fade-in-up">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/b91c1c/white?text=Robotics" alt="Robotics Club">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-red-600 bg-red-100 py-1 px-3 rounded-full">Technical</span>
+                        <h3 class="font-bold text-2xl mt-3 mb-2">Robotics Forum</h3>
+                        <p class="text-gray-600 text-base mb-4">Building the future, one robot at a time. Join us for hands-on projects, workshops, and competitions.</p>
+                        <a href="#" class="font-semibold text-red-700 hover:text-red-900">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Club Card 2: Cultural -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 fade-in-up" style="transition-delay: 100ms;">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/1d4ed8/white?text=Cultural" alt="Cultural Club">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-blue-600 bg-blue-100 py-1 px-3 rounded-full">Cultural</span>
+                        <h3 class="font-bold text-2xl mt-3 mb-2">Antarang</h3>
+                        <p class="text-gray-600 text-base mb-4">The heart of VIT's cultural scene. From music and dance to drama, we celebrate creativity and expression.</p>
+                        <a href="#" class="font-semibold text-blue-700 hover:text-blue-900">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Club Card 3: Social -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 fade-in-up" style="transition-delay: 200ms;">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/16a34a/white?text=Social" alt="Social Club">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-green-600 bg-green-100 py-1 px-3 rounded-full">Social</span>
+                        <h3 class="font-bold text-2xl mt-3 mb-2">VIT Social Wing</h3>
+                        <p class="text-gray-600 text-base mb-4">Making a difference in the community. Join our initiatives for social welfare and environmental causes.</p>
+                        <a href="#" class="font-semibold text-green-700 hover:text-green-900">Learn More &rarr;</a>
+                    </div>
+                </div>
+                 <!-- Club Card 4: Linux User Group -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 fade-in-up">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/404040/ffffff?text=V-BUG" alt="V-BUG Linux User Group">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-gray-600 bg-gray-100 py-1 px-3 rounded-full">Open Source</span>
+                        <h3 class="font-bold text-2xl mt-3 mb-2">V-BUG Linux Group</h3>
+                        <p class="text-gray-600 text-base mb-4">Exploring the world of open-source software. We champion Linux and collaborative development.</p>
+                        <a href="#" class="font-semibold text-gray-700 hover:text-gray-900">Learn More &rarr;</a>
+                    </div>
+                </div>
+                 <!-- Club Card 5: Racing Team -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 fade-in-up" style="transition-delay: 100ms;">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/f97316/white?text=Racing" alt="Veloce Racing">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-orange-600 bg-orange-100 py-1 px-3 rounded-full">Automotive</span>
+                        <h3 class="font-bold text-2xl mt-3 mb-2">Team Veloce Racing</h3>
+                        <p class="text-gray-600 text-base mb-4">Engineering speed and performance. We design, build, and race formula-style cars in national events.</p>
+                        <a href="#" class="font-semibold text-orange-700 hover:text-orange-900">Learn More &rarr;</a>
+                    </div>
+                </div>
+                 <!-- Club Card 6: Entrepreneurship -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 fade-in-up" style="transition-delay: 200ms;">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/6d28d9/white?text=E-Cell" alt="Entrepreneurship Cell">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-purple-600 bg-purple-100 py-1 px-3 rounded-full">Innovation</span>
+                        <h3 class="font-bold text-2xl mt-3 mb-2">Entrepreneurship Cell</h3>
+                        <p class="text-gray-600 text-base mb-4">Fostering the next generation of startup founders. We host speaker sessions, workshops, and pitch competitions.</p>
+                        <a href="#" class="font-semibold text-purple-700 hover:text-purple-900">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Vishwakarma Institute of Technology, Pune. All Rights Reserved.</p>
+            <p class="text-gray-400 text-sm mt-2">This is a conceptual design for showcasing student clubs.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for scroll animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedElements = document.querySelectorAll('.fade-in-up');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
